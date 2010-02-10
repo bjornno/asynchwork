@@ -1,6 +1,6 @@
-package no.bbs.shared.asynchwork.database;
+package bjornno.asynchwork.database;
 
-import no.bbs.shared.asynchwork.*;
+import bjornno.asynchwork.*;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;

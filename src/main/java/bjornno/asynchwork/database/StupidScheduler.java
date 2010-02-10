@@ -1,7 +1,7 @@
-package no.bbs.shared.asynchwork.database;
+package bjornno.asynchwork.database;
 
-import no.bbs.shared.asynchwork.Scheduler;
-import no.bbs.shared.asynchwork.WorkManager;
+import bjornno.asynchwork.Scheduler;
+import bjornno.asynchwork.WorkManager;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

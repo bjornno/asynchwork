@@ -1,8 +1,8 @@
-package no.bbs.shared.asynchwork;
+package bjornno.asynchwork;
 
 import junit.framework.Assert;
-import no.bbs.shared.asynchwork.database.JdbcReceiver;
-import no.bbs.shared.asynchwork.database.JdbcSender;
+import bjornno.asynchwork.database.JdbcReceiver;
+import bjornno.asynchwork.database.JdbcSender;
 import org.junit.Test;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;

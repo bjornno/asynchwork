@@ -1,4 +1,4 @@
-package no.bbs.shared.asynchwork;
+package bjornno.asynchwork;
 
 /**
  */

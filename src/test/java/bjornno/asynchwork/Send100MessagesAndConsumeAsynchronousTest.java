@@ -1,8 +1,8 @@
-package no.bbs.shared.asynchwork;
+package bjornno.asynchwork;
 
-import no.bbs.shared.asynchwork.database.JdbcReceiver;
-import no.bbs.shared.asynchwork.database.JdbcSender;
-import no.bbs.shared.asynchwork.database.SpringWorkManager;
+import bjornno.asynchwork.database.JdbcReceiver;
+import bjornno.asynchwork.database.JdbcSender;
+import bjornno.asynchwork.database.SpringWorkManager;
 import org.junit.Test;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;

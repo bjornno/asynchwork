@@ -1,9 +1,9 @@
-package no.bbs.shared.asynchwork.database;
+package bjornno.asynchwork.database;
 
-import no.bbs.shared.asynchwork.AsynchReceiver;
-import no.bbs.shared.asynchwork.Message;
-import no.bbs.shared.asynchwork.ReceivingService;
-import no.bbs.shared.asynchwork.Worker;
+import bjornno.asynchwork.AsynchReceiver;
+import bjornno.asynchwork.Message;
+import bjornno.asynchwork.ReceivingService;
+import bjornno.asynchwork.Worker;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 

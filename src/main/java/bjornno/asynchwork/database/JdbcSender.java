@@ -1,6 +1,6 @@
-package no.bbs.shared.asynchwork.database;
+package bjornno.asynchwork.database;
 
-import no.bbs.shared.asynchwork.AsynchSender;
+import bjornno.asynchwork.AsynchSender;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
