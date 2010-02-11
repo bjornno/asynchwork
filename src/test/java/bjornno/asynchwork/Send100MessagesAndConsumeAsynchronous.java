@@ -16,8 +16,8 @@ import java.util.concurrent.Executors;
 
 /**
  */
-public class Send100MessagesAndConsumeAsynchronousTest {
-    @Test
+public class Send100MessagesAndConsumeAsynchronous {
+    //@Test
     public void sendAndRetrieve100MessagesAsynch() {
         EmbeddedDatabaseBuilder builder = new EmbeddedDatabaseBuilder();
         EmbeddedDatabase db = builder.setType(EmbeddedDatabaseType.HSQL).addScript("db-provision.sql").build();
