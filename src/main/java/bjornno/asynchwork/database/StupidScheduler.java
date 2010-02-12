@@ -20,6 +20,7 @@ public class StupidScheduler implements Scheduler {
     }
 
     public void start() {
+        System.out.println("Starting asynchwork scanner.");
         Executor executor = Executors.newFixedThreadPool(1);
         while(true) {
             executor.execute(workManager);
