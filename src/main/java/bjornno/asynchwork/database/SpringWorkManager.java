@@ -1,11 +1,13 @@
 package bjornno.asynchwork.database;
 
 import bjornno.asynchwork.*;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
 import org.springframework.transaction.support.TransactionTemplate;
 
+import javax.sql.DataSource;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -22,10 +24,10 @@ public class SpringWorkManager implements WorkManager {
     private TransactionTemplate transactionTemplate;
     private int numberOfThreads = 6;
 
-    public SpringWorkManager(Map receivingServices, AsynchReceiver receiver, TransactionTemplate transactionTemplate) {
+    public SpringWorkManager(Map receivingServices, AsynchReceiver receiver, DataSource dataSource) {
         this.receivingServices = receivingServices;
         this.asynchReceiver = receiver;
-        this.transactionTemplate = transactionTemplate;
+        this.transactionTemplate = new TransactionTemplate(new DataSourceTransactionManager(dataSource));
     }
 
     public void setNumberOfThreads(int numberOfThreads) {

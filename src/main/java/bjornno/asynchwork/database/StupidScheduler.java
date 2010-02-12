@@ -11,6 +11,10 @@ import java.util.concurrent.Executors;
 public class StupidScheduler implements Scheduler {
     private WorkManager workManager;
 
+    public StupidScheduler(WorkManager workManager) {
+        this.workManager = workManager;
+    }
+
     public void setWorkManager(WorkManager workManager) {
         this.workManager = workManager;
     }

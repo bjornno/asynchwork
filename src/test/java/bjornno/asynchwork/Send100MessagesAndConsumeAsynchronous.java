@@ -31,7 +31,7 @@ public class Send100MessagesAndConsumeAsynchronous {
 
     private void startSingleThreadedFixedTimeWorkManager(EmbeddedDatabase db, Map map) {
         AsynchReceiver receiver = new JdbcReceiver(db);
-        WorkManager mngr = new SpringWorkManager(map, receiver, new TransactionTemplate(new DataSourceTransactionManager(db)));
+        WorkManager mngr = new SpringWorkManager(map, receiver, db);
         Executors.newSingleThreadExecutor().execute(mngr);
 
         try {
